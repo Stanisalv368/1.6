@@ -373,7 +373,7 @@ body {
 .go {
   width: 40px;
   height: 40px;
-  background-image: url(/src/image/go.svg);
+  background-image: url(./static/go.svg);
   background-repeat: no-repeat;
   align-self: flex-end; }
 
@@ -491,7 +491,7 @@ body {
   position: relative;
   display: none; }
   .btn__icon {
-    background-image: url(/src/image/expand.svg);
+    background-image: url(./static/expand.svg);
     width: 24px;
     height: 24px;
     position: absolute;
@@ -631,7 +631,7 @@ body {
     position: relative; }
   .note__link-text::after {
     content: '';
-    background-image: url(/src/image/Line.svg);
+    background-image: url(./static/Line.svg);
     width: 8px;
     height: 12px;
     position: absolute;
