@@ -816,7 +816,7 @@ body {
   .btn-order__icon {
     width: 7px;
     height: 10px;
-    background: url(/src/image/dropdown.svg) no-repeat; }
+    background: url(./static/dropdown.svg) no-repeat; }
   .btn-order__text {
     font-family: TT Lakes Bold;
     font-size: 12px;
