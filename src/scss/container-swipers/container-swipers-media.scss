@@ -1,0 +1,152 @@
+@media (min-width: $breakpoint_tablet) {
+  .btn {
+    display: block;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+
+  .header-swipers__text {
+    padding-left: 24px;
+  }
+  .header-title {
+    &__text {
+      padding-left: 24px;
+    }
+  }
+  .brend-list {
+    &__wrapper {
+      gap: 16px 24px;
+      flex-wrap: wrap;
+      max-height: 164px;
+      overflow: hidden;
+      padding-left: 24px;
+    }
+    &__slide {
+      width: 224px;
+    }
+    &__gradient {
+      display: none;
+    }
+  }
+  .repair-list {
+    &__wrapper {
+      gap: 16px 24px;
+      flex-wrap: wrap;
+      max-height: 164px;
+      overflow: hidden;
+      padding-left: 24px;
+    }
+    &__slide {
+      width: 224px;
+    }
+    &__gradient {
+      display: none;
+    }
+  }
+
+  .swiper-up {
+    max-height: 544px;
+  }
+
+  .price-list {
+    .swiper {
+      padding: 16px 24px 24px 24px;
+    }
+    &__wrapper {
+      flex-wrap: wrap;
+      padding: 0;
+      background: $color_sub-main;
+      border-radius: 6px;
+      flex-direction: column;
+
+      .swiper-slide {
+        position: relative;
+      }
+      .swiper-slide:not(:last-child)::after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: $color_decoration-grey;
+        position: absolute;
+        top: 62px;
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+    }
+
+    &__slide {
+      flex-direction: row;
+      align-items: center;
+      min-width: 100%;
+      height: 64px;
+      padding-right: 16px;
+      gap: 22px;
+      background-color: transparent;
+      border: none;
+      position: relative;
+    }
+    &__title {
+      display: none;
+    }
+    &__btn {
+      position: static;
+    }
+    &__repair {
+      flex-grow: 1;
+    }
+    &__time {
+      min-width: 81px;
+    }
+    &__price {
+      min-width: 73px;
+    }
+    &__gradient {
+      display: none;
+    }
+  }
+  .title-price {
+    display: flex;
+    padding-left: 40px;
+    padding-right: 225px;
+    padding-top: 31px;
+    gap: 61px;
+    color: $color_text-regular;
+    font-size: 14px;
+    font-family: TT Lakes Medium;
+
+    &__text1 {
+      flex-grow: 1;
+    }
+  }
+}
+
+@media (min-width: $breakpoint_desktop) {
+  .header-title {
+    &__text {
+      padding-left: 32px;
+    }
+  }
+  .brend-list,
+  .repair-list {
+    &__slide {
+      width: 240px;
+    }
+    &__wrapper {
+      gap: 16px 32px;
+      padding-left: 32px;
+    }
+  }
+  .price-list {
+    &__slide {
+      gap: 120px;
+    }
+    .swiper {
+      padding-left: 32px;
+    }
+    .title-price {
+      gap: 158px;
+      padding-right: 326px;
+    }
+  }
+}

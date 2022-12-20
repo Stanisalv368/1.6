@@ -1,0 +1,114 @@
+.container-main-info {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.main {
+  background-color: $color_main-bgrond;
+
+  &__h1 {
+    font-family: TT Lakes Bold;
+    font-size: 28px;
+    line-height: 40px;
+    padding: 20px 16px 20px 16px;
+    position: relative;
+  }
+
+  &__h1::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 38px;
+    background: $color_decoration-green;
+    left: 0;
+    border-radius: 2px;
+  }
+
+  &__nav-list {
+    display: flex;
+    overflow: scroll;
+    padding: 0;
+    margin: 0;
+    column-gap: 3px;
+    margin-bottom: 14px;
+    padding-left: 16px;
+  }
+  &__nav-list::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  &__nav-item {
+    white-space: nowrap;
+  }
+
+  &__nav-link {
+    display: block;
+    color: $color_text-regular;
+    padding: 8px 12px 8px 16px;
+    border: 2px solid transparent;
+  }
+  &__nav-link:hover {
+    border: 2px solid $color_border-green;
+    border-radius: 6px;
+    background: $color_sub-main;
+  }
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__text {
+      padding-left: 16px;
+      padding-right: 16px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &__p {
+      display: block;
+      width: 288px;
+      height: 90px;
+      overflow: hidden;
+    }
+
+    &__p2 {
+      display: block;
+      margin-top: 20px;
+    }
+    &__p3 {
+      display: block;
+      margin-top: 20px;
+    }
+
+    &__button_hiden {
+      padding-left: 32px;
+      position: relative;
+      margin-bottom: 20px;
+      margin-top: 10px;
+      position: relative;
+    }
+
+    &__btn-icon {
+      background-image: url(./../image/expand.svg);
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      left: 0;
+      top: -2px;
+    }
+    &__btn-text {
+      font-size: 16px;
+    }
+    &__image-box {
+      width: 320px;
+      height: 230px;
+    }
+    &__btn-icon_rotate {
+      transform: rotate(180deg);
+    }
+    &__p-up {
+      min-height: 236px;
+    }
+  }
+}
+.container-main-blur {
+  opacity: 0.05;
+}

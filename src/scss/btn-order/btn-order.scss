@@ -1,0 +1,23 @@
+.btn-order {
+  background-color: $color_akcent;
+  border-radius: 16px;
+  color: $color_sub-main;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 16px;
+  padding: 4px 16px;
+
+  &__icon {
+    width: 7px;
+    height: 10px;
+    background: url(/src/image/dropdown.svg) no-repeat;
+  }
+  &__text {
+    font-family: TT Lakes Bold;
+    font-size: 12px;
+    line-height: 24px;
+    display: block;
+    text-transform: uppercase;
+  }
+}

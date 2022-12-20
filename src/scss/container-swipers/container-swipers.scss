@@ -1,0 +1,177 @@
+.title-price {
+  display: none;
+}
+
+.go {
+  width: 40px;
+  height: 40px;
+  background-image: url(/src/image/go.svg);
+  background-repeat: no-repeat;
+  align-self: flex-end;
+}
+
+.header-title {
+  width: 100%;
+  background: linear-gradient(to right, #f8f8f8 0%, #ffffff 98.61%);
+
+  &__text {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color_text-regular;
+    padding: 16px;
+    text-transform: uppercase;
+  }
+}
+
+.brend-list {
+  &__swiper {
+    min-height: 128px;
+  }
+
+  &__wrapper {
+    padding: 16px 0 0 16px;
+  }
+
+  &__slide {
+    width: 240px;
+    height: 72px;
+    background-color: $color_sub-main;
+    border: 1px solid $color_decoration-grey;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 16px 16px;
+  }
+  &__gradient {
+    width: 24px;
+    height: 81px;
+    background: linear-gradient(
+      270deg,
+      #f8f8f8 16.84%,
+      rgba(248, 248, 248, 0.0001) 100%
+    );
+    position: absolute;
+    top: 6px;
+    right: 0;
+    z-index: 5;
+  }
+}
+
+.repair-list {
+  &__slide {
+    width: 240px;
+    height: 160px;
+    background: $color_sub-main;
+    border: 1px solid $color_decoration-grey;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+  }
+
+  &__wrapper {
+    padding: 16px 0 0 16px;
+  }
+  &__swiper-pagination {
+    position: static;
+  }
+  &__gradient {
+    width: 24px;
+    height: 166px;
+    background: linear-gradient(
+      270deg,
+      #f8f8f8 16.84%,
+      rgba(248, 248, 248, 0.0001) 100%
+    );
+    position: absolute;
+    top: 8px;
+    right: 0;
+    z-index: 5;
+  }
+}
+
+.swiper {
+  .swiper-pagination {
+    position: static;
+    padding-top: 16px;
+  }
+}
+
+.price-list {
+  &__slide {
+    width: 260px;
+    height: 200px;
+    background-color: $color_sub-main;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0 20px 16px;
+    display: flex;
+    flex-direction: column;
+    font-family: TT Lakes Regular;
+    font-size: 14px;
+    position: relative;
+  }
+  &__title {
+    color: $color_text-regular;
+    display: block;
+  }
+  &__text {
+    font-family: TT Lakes Medium;
+  }
+  &__btn {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    width: 119px;
+    height: 32px;
+  }
+  &__wrapper {
+    padding: 16px 0 0 16px;
+  }
+  &__gradient {
+    width: 24px;
+    height: 200px;
+    background: linear-gradient(
+      270deg,
+      #f8f8f8 16.84%,
+      rgba(248, 248, 248, 0.0001) 100%
+    );
+    position: absolute;
+    top: 12px;
+    right: 0;
+    z-index: 5;
+  }
+}
+
+.btn {
+  border: 0;
+  background-color: $color_main-bgrond;
+  cursor: pointer;
+  margin: 24px 0 32px 57px;
+  position: relative;
+  display: none;
+
+  &__icon {
+    background-image: url(/src/image/expand.svg);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -29px;
+    top: -2px;
+  }
+  &__icon_rotate {
+    transform: rotate(180deg);
+  }
+}
+
+.swiper .swiper-slide {
+  width: auto;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: $color_bground-pagination;
+  width: 12px;
+  height: 12px;
+}

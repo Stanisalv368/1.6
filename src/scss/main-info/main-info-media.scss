@@ -1,0 +1,73 @@
+@media (min-width: $breakpoint_tablet) {
+  .main {
+    &__h1 {
+      padding-bottom: 32px;
+      padding-left: 24px;
+    }
+
+    &__nav-list {
+      margin-bottom: 32px;
+      padding-left: 24px;
+    }
+
+    .info {
+      gap: 48px;
+
+      &__text {
+        padding: 0 0 0 24px;
+      }
+
+      &__p {
+        width: 310px;
+        height: 150px;
+      }
+
+      &__p2 {
+        display: block;
+        margin-top: 20px;
+      }
+
+      &__image-box {
+        width: 360px;
+        height: 260px;
+      }
+      &__image {
+        border-radius: 6px;
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint_desktop) {
+  .container-main {
+    margin: 0 0 0 auto;
+  }
+  .main {
+    margin-top: -88px;
+    &__h1 {
+      padding: 30px 16px 32px 34px;
+    }
+
+    &__nav-list {
+      flex-wrap: wrap;
+      padding-top: 30px;
+      margin-bottom: 20px;
+      padding-left: 34px;
+    }
+
+    .info {
+      &__text {
+        padding-left: 32px;
+      }
+      &__p {
+        width: 490px;
+        height: 160px;
+      }
+
+      &__image-box {
+        width: 531px;
+        height: 383px;
+      }
+    }
+  }
+}

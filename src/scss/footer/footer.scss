@@ -1,0 +1,42 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  color: #7e7e82;
+  gap: 16px;
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 19px;
+
+  &__about-developer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: $breakpoint_tablet) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 32px 24px 24px 24px;
+
+    &__about-developer {
+      text-align: left;
+      min-width: 218px;
+    }
+    &__note {
+      text-align: end;
+      max-width: 213px;
+    }
+  }
+}
+@media (min-width: $breakpoint_desktop) {
+  .footer {
+    padding-left: 32px;
+    padding-right: 32px;
+
+    &__note {
+      max-width: 330px;
+      text-align: end;
+    }
+  }
+}

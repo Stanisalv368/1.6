@@ -1,0 +1,30 @@
+@media (min-width: $breakpoint_desktop) {
+  .burger {
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+
+    &__header .header__button:nth-child(1) {
+      display: none;
+    }
+  }
+  .burger-blur {
+    opacity: 0.05;
+  }
+}
+@media (max-height: 825px) {
+  .burger {
+    &__menu-item {
+      margin-bottom: 12px;
+    }
+    &__contacts-tell {
+      margin-bottom: 20px;
+    }
+    .header {
+      margin-bottom: 20px;
+    }
+    .menu__list {
+      margin: 0;
+    }
+  }
+}

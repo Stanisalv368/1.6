@@ -1,0 +1,34 @@
+.container-main-info {
+  .header {
+    background-color: $color_sub-main;
+    &__button-hiden {
+      display: none;
+    }
+
+    &__button-lable {
+      display: none;
+    }
+
+    &__list {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      padding: 18px 16px 18px 16px;
+    }
+
+    &__servise {
+      position: relative;
+    }
+
+    &__servise::before {
+      content: '';
+      width: 2px;
+      height: 32px;
+      border-radius: 1px;
+      background: $color_decoration-grey;
+      position: absolute;
+      left: -20px;
+      top: 4px;
+    }
+  }
+}
